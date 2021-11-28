@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Hack: Fuerza Bruta</title>
+</head>
+<body>
+
+<div> La siguiente página tiene como objetivo que usted pueda calcular de manera manual, cuanto tiempo le tomaría a un ciberdelicuente descifrar su contraseña de red wifi utilizando un ataque de fuerza bruta, en base a las características de su contraseña. </div>
+
+<div> Seleccione los filtros de búsqueda de password </div>
+
+<form>
+
+<p>
+    Gama del procesador: (Este dato es muy subjetivo, pero consideraremos como valor promedio inicial el procesador de gama media, así mismo usted podrá interactuar con los datos para saber que pasaría en caso de que alguien con muy buen equipo lo intentara) 
+    <br>
+    <input type="radio" name="gama" value="MB"/> Muy Baja
+    <input type="radio" name="gama" value="B"/> Baja
+    <input type="radio" name="gama" value="M" checked/> Media
+    <input type="radio" name="gama" value="A"/> Alta
+    <input type="radio" name="gama" value="MA"/> Muy alta
+</p>
+
+<p>
+
+<div> Seleccione en los siguientes casilleros, que tipo de carácteres posee su contraseña:</div>
+  <input type="checkbox" name="num" checked id="numeros"/> Números
+  <br>
+  <input type="checkbox" name="minus" id="minus"/> Abecedario en Minúscula
+  <br>
+  <input type="checkbox" name="mayus" id="mayus"/> Abecedario en Mayúscula
+  <br>
+  <input type="checkbox" name="charactEspecial" id="charactEspecial"/> Carácteres Especiales
+</p>
+
+<div> Ingrese la cantidad de caracteres que tenga su contraseña. (El promedio de contraseñas no supera los 10 dígitos, a modo de refencia, un número de DNI tiene entre 7 y 8 números) </div>
+
+<input type="number" name="user" placeholder="Cantidad..." id="name" autocomplete="off" required  min="1" max="100"> 
+
+<button id=btnSave> Calcular </button>
+
+</form>
+
+
+</body>
+</html>
